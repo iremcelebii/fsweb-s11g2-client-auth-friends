@@ -31,26 +31,26 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [x] Forklayın.
+- [x] Klonlayın
+- [x] Ana dizine gidin
+- [x] `npm install`
+- [x] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
 #### Login (kullanıcı girişi) bileşenini oluşturun
 
-- [ ] Örnekteki login sayfası gibi [mockup](./designs/login_mockup.png) bir login bileşeni oluşturun.
-- [ ] `App.js` içine, `/` ya da `/login` ziyaret edildiğinde bu bileşeni gösteren bir route ekleyin
-- [ ] Login formu gönderildiğinde, döndürülen tokeni localStorage e kaydedin ve sayfayı FriendsList sayfasına yönlendirin
+- [x] Örnekteki login sayfası gibi [mockup](./designs/login_mockup.png) bir login bileşeni oluşturun.
+- [x] `App.js` içine, `/` ya da `/login` ziyaret edildiğinde bu bileşeni gösteren bir route ekleyin
+- [x] Login formu gönderildiğinde, döndürülen tokeni localStorage e kaydedin ve sayfayı FriendsList sayfasına yönlendirin
 
 #### FriendsList bileşenini oluşturun
 
-- [ ] Örnektesi `FriendsList` [mockup](./designs/friendslist_mockup.png) gibi bir bileşen oluşturun.
-- [ ] Bileşen bağlandığında, tüm karakterleri gönderen bir API call oluşturun. Bunun korumalı bir route olduğunu unutmayın.
-- [ ] `App.js` içinde, `/friends` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin
-- [ ] Login bileşeninize, oluşturduğunuz `FriendsList` bileşenine yönlendirme kabiliyeti ekleyin.
+- [x] Örnektesi `FriendsList` [mockup](./designs/friendslist_mockup.png) gibi bir bileşen oluşturun.
+- [x] Bileşen bağlandığında, tüm karakterleri gönderen bir API call oluşturun. Bunun korumalı bir route olduğunu unutmayın.
+- [x] `App.js` içinde, `/friends` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin
+- [x] Login bileşeninize, oluşturduğunuz `FriendsList` bileşenine yönlendirme kabiliyeti ekleyin.
 
 #### addFriends bileşeni oluşturun
 
@@ -68,7 +68,7 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 #### /friends ve /friends/add routlarını korumak
 
-- [ ] Eğer local storage a kayıtlı bir token yoksa bu url ler ziyaret edildiğinde login routeuna sayfa yönlendirilsin.
+- [x] Eğer local storage a kayıtlı bir token yoksa bu url ler ziyaret edildiğinde login routeuna sayfa yönlendirilsin.
 
 ### Görev 3: Esnek görevler
 
