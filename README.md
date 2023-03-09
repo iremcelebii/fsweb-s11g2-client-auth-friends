@@ -54,17 +54,17 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 #### addFriends bileşeni oluşturun
 
-- [ ] Örnekteki `AddFriend` [mockup](./designs/addfriends_mockup.png) gibi bir karakter ekleme bileşeni oluşturun.
-- [ ] Tüm karakter özellikleri için inputlar ve bir submit butonu içeren bir bileşen olmalı
-- [ ] Form gönderildiğinde, uygun api uç noktasına yeni karakter datanızı gönderen bir sorgu atın. Bunun korumalı bir route olduğunu unutmayın.
-- [ ] `App.js` içinde, `/friends/add` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
+- [x] Örnekteki `AddFriend` [mockup](./designs/addfriends_mockup.png) gibi bir karakter ekleme bileşeni oluşturun.
+- [x] Tüm karakter özellikleri için inputlar ve bir submit butonu içeren bir bileşen olmalı
+- [x] Form gönderildiğinde, uygun api uç noktasına yeni karakter datanızı gönderen bir sorgu atın. Bunun korumalı bir route olduğunu unutmayın.
+- [x] `App.js` içinde, `/friends/add` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
 
 #### Logout butonu oluşturun
 
-- [ ] Uygulamanızdan çıkış yapmanızı sağlayan bir logout bileşeni oluşturun.
-- [ ] Bu bileşen logout uç noktasına sorgu atacak ve local storageda kayıtlı tokenı silecek.
-- [ ] `App.js` içinde , `/logout` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
-- [ ] `App.js` içinde, kullanıcının logout, karakter listesi ve karakter ekleme sayfalarına ulaşabileceği navigasyonlar oluşturun.
+- [x] Uygulamanızdan çıkış yapmanızı sağlayan bir logout bileşeni oluşturun.
+- [x] Bu bileşen logout uç noktasına sorgu atacak ve local storageda kayıtlı tokenı silecek.
+- [x] `App.js` içinde , `/logout` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
+- [x] `App.js` içinde, kullanıcının logout, karakter listesi ve karakter ekleme sayfalarına ulaşabileceği navigasyonlar oluşturun.
 
 #### /friends ve /friends/add routlarını korumak
 

@@ -14,6 +14,7 @@ export default function Login() {
       [event.target.name]: event.target.value,
     });
   }
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -21,35 +22,50 @@ export default function Login() {
       .post("http://localhost:9000/api/login", formData)
       .then((res) => {
         localStorage.setItem("s11g2", res.data.token);
+
+        console.log("selam1");
         history.push("/friends");
       })
       .catch((error) => console.log(error));
+
+    setFormData({
+      username: "",
+      password: "",
+    });
+    console.log("selam2");
   }
 
   return (
-    <>
-      <h2 className="text-xl font-bold p-2">Giriş Yap</h2>
-      <form className="text-right" onSubmit={handleSubmit}>
-        <label>
-          USERNAME
+    <div className="inline-block">
+      <h2 className="font-black text-5xl mt-16 mb-2">LOGIN</h2>
+      <div className="m-auto">
+        <form className=" flex flex-col" onSubmit={handleSubmit}>
+          <label htmlFor="username" className="text-left">
+            USERNAME
+          </label>
           <input
+            className="bg-black block text-white m-auto "
             onChange={handleChange}
             name="username"
+            id="username"
             value={formData.username}
             type="text"
           />
-        </label>
-        <label>
-          PASSWORD
+          <label htmlFor="password" className="text-left">
+            PASSWORD
+          </label>
           <input
+            className="bg-black block text-white m-auto"
             onChange={handleChange}
             name="password"
+            id="password"
             value={formData.password}
             type="password"
           />
-        </label>
-        <button type="submit">SUBMIT</button>
-      </form>
-    </>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
   );
 }

@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
-
+import { useHistory } from "react-router-dom";
 export default function AddFriend() {
+  const history = useHistory();
   let token = localStorage.getItem("s11g2");
   const [formData, setFormData] = useState({
     name: "",
@@ -23,6 +24,7 @@ export default function AddFriend() {
       })
       .then((res) => {
         console.log(res.data);
+        history.push("/friends");
       })
       .catch((error) => console.log(error));
   }

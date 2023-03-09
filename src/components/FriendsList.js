@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 export default function FriendsList() {
-  const history = useHistory();
+  // const history = useHistory();
   const [friends, setFriends] = useState([]);
   let token = localStorage.getItem("s11g2");
   //   useEffect(() => {
@@ -35,7 +35,7 @@ export default function FriendsList() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [token]);
   return (
     <div>
       <h2 className="text-xl font-bold p-2">FRIENDS LIST</h2>
